@@ -1,0 +1,9 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sistema de Certificados</title>
+<style>
+body{font-family:Arial;background:#eef1f5;margin:0;padding:45px}.box{max-width:950px;margin:auto;background:#fff;padding:35px;border-radius:15px;box-shadow:0 4px 18px #bbb}h1{text-align:center}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:35px}.card{border:1px solid #ddd;border-radius:12px;padding:25px;text-align:center}.num{font-size:32px;font-weight:bold;color:#9b741c}.card p{height:55px;color:#666}.btn{display:block;background:#9b741c;color:#fff;text-decoration:none;padding:13px;border-radius:7px;font-weight:bold}@media(max-width:750px){.grid{grid-template-columns:1fr}}
+</style></head><body><div class="box"><h1>SISTEMA DE CERTIFICADOS</h1><div class="grid">
+<div class="card"><div class="num">1</div><h2>Generar certificado</h2><p>Crear un certificado para una sola persona.</p><a class="btn" href="individual.php">INGRESAR</a></div>
+<div class="card"><div class="num">2</div><h2>Importar Excel</h2><p>Cargar una lista de participantes desde Excel.</p><a class="btn" href="importar_excel.php">INGRESAR</a></div>
+<div class="card"><div class="num">3</div><h2>Listado y generar</h2><p>Ver el estado de generación y seleccionar participantes.</p><a class="btn" href="listado.php">INGRESAR</a></div>
+<div class="card"><div class="num">4</div><h2>Enviar certificados</h2><p>Enviar por correo certificados que ya fueron generados.</p><a class="btn" href="listado.php">INGRESAR</a></div>
+</div></div></body></html>

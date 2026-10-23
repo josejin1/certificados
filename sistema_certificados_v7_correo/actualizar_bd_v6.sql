@@ -1,0 +1,4 @@
+USE certificados;
+ALTER TABLE certificados ADD COLUMN correo VARCHAR(190) DEFAULT NULL;
+ALTER TABLE certificados ADD COLUMN fecha_envio DATETIME DEFAULT NULL;
+ALTER TABLE certificados ADD COLUMN estado_correo VARCHAR(30) DEFAULT 'PENDIENTE';

@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS certificados CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE certificados;
+CREATE TABLE IF NOT EXISTS certificados (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ nombre VARCHAR(100) NOT NULL,
+ apellido VARCHAR(100) NOT NULL,
+ ci VARCHAR(30) DEFAULT NULL,
+ correo VARCHAR(190) DEFAULT NULL,
+ programa VARCHAR(255) NOT NULL,
+ fecha_emision DATE NOT NULL,
+ codigo VARCHAR(50) NOT NULL UNIQUE,
+ archivo VARCHAR(255) DEFAULT NULL,
+ estado ENUM('VIGENTE','ANULADO') DEFAULT 'VIGENTE',
+ fecha_envio DATETIME DEFAULT NULL,
+ estado_correo VARCHAR(30) DEFAULT 'PENDIENTE',
+ creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+-- Si ya tiene la base V5 instalada, ejecute también:
+-- ALTER TABLE certificados ADD COLUMN correo VARCHAR(190) DEFAULT NULL;
+-- ALTER TABLE certificados ADD COLUMN fecha_envio DATETIME DEFAULT NULL;
+-- ALTER TABLE certificados ADD COLUMN estado_correo VARCHAR(30) DEFAULT 'PENDIENTE';
